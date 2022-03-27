@@ -134,7 +134,7 @@ class Hangman(Game):
 
         while flag:
             print(displayed_word)
-            player_gues = input("Put one Letter: ")
+            player_gues = input("Put one Letter: ").lower()
             if player_gues.isalpha():
                 if len(player_gues)==1:
                     if player_gues in self.the_word:
